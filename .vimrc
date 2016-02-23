@@ -290,6 +290,14 @@ let NERDTreeShowHidden=1
 " Disable bookmarks label, and hint about '?'
 let NERDTreeMinimalUI=1
 
+map <leader>n :NERDTreeToggle<CR>
+
+map <leader>r :NERDTreeFind<cr>
+
+map <leader>[ :tabprevious<cr>
+
+map <leader>] :tabnext<cr>
+
 " Display current file in the NERDTree ont the left
 nmap <silent> <leader>f :NERDTreeFind<CR>
 
@@ -517,7 +525,7 @@ call arpeggio#map('i', '', 0, 'jk', '<ESC>')
 colorscheme solarized
 
 " Setting up light color scheme
-set background=light
+set background=dark
 
 " set highlighting for colorcolumn
 highlight ColorColumn ctermbg=lightGrey
