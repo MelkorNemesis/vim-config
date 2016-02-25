@@ -780,6 +780,13 @@ vmap <leader>s :s//<left>
 " Moving between splits
 nmap <leader>w <C-w>w
 
+" Remove delay on ESC
+set timeoutlen=1000 ttimeoutlen=0
+
+" Switch between tabs
+nmap <C-l> gt
+nmap <C-h> gT
+
 "--------------------------------------------------
 " Aautocmd
 
