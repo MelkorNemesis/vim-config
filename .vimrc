@@ -279,6 +279,8 @@ nnoremap <silent><leader>; :Unite file_rec/async:! -buffer-name=files -start-ins
 " Unite-grep
 nnoremap <silent><leader>/ :Unite grep:. -no-start-insert -no-quit -keep-focus -wrap<CR>
 
+" Opens list of buffers and waits for user to select one
+:nnoremap <F5> :buffers<CR>:buffer<Space>
 
 
 "-------------------------
